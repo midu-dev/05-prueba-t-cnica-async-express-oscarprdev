@@ -1,0 +1,32 @@
+GET http://localhost:3000/items 
+###
+
+POST http://localhost:3000/items 
+content-type: application/json
+
+{
+    "content": "User 2"
+}
+
+###
+GET http://localhost:3000/items/1
+
+###
+DELETE  http://localhost:3000/items/1
+
+###
+PUT  http://localhost:3000/items/10
+content-type: application/json
+
+{
+    "id": 1,
+    "content": "Item 1"
+}
+
+###
+PATCH  http://localhost:3000/items/1
+content-type: application/json
+
+{
+    "content": "Item 1"
+}
